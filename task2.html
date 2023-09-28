@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles-task.css" />
+    <script src="script-task2.js" defer></script>
     <title>Quiz sobre o Sistema Solar</title>
   </head>
   <body>
@@ -12,9 +13,9 @@
     </header>
 
     <main>
-      <section>
+      <section id="sectionOne">
         <h2>Pergunta 1:</h2>
-        <p>Quantos planetas existem no Sistema Solar?</p>
+        <p id="firstP">Quantos planetas existem no Sistema Solar?</p>
         <form>
           <label> <input type="radio" name="pergunta1" value="a" />a) 7 </label>
           <label> <input type="radio" name="pergunta1" value="b" />b) 8 </label>
@@ -23,7 +24,7 @@
         </form>
       </section>
 
-      <section>
+      <section id="form">
         <h2>Pergunta 2:</h2>
         <p>
           Quais destes são planetas gasosos? Selecione todas as opções corretas.
@@ -38,7 +39,7 @@
           <label>
             <input type="checkbox" name="pergunta2" value="c" />c) Vênus
           </label>
-          <button type="submit">Enviar</button>
+          <button id="my-button" type="submit">Enviar</button>
         </form>
       </section>
 
@@ -46,10 +47,10 @@
         <h2>Pergunta 3:</h2>
         <p>Qual é a maior lua de Saturno?</p>
         <form>
-          <select name="pergunta3">
+          <select name="pergunta3" id="select">
             <option value="a">Europa</option>
             <option value="b">Titã</option>
-            <option value="c">Lua de Ganimedes</option>
+            <option id="optionC" value="c">Lua de Ganimedes</option>
           </select>
           <button type="submit">Enviar</button>
         </form>
